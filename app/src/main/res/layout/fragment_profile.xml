@@ -158,7 +158,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <ImageView
-                android:id="@+id/signout"
+                android:id="@+id/profile_signout"
                 android:layout_width="40dp"
                 android:layout_height="35dp"
                 android:layout_marginTop="15dp"

@@ -2,6 +2,7 @@ package com.example.btgkapptonghop;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -101,6 +103,11 @@ public class ListFragment extends Fragment {
             public void onClickItem(Item item) {
                 homePage.goToDetailFragment(item);
             }
+
+            @Override
+            public void onLongCLickItem(int position) {
+                Xoa(position);
+            }
         });
         recyclerView.setAdapter(adapter);
         Button additem = view.findViewById(R.id.additem);
@@ -163,6 +170,27 @@ public class ListFragment extends Fragment {
                 }
             }
     );
+
+    private void Xoa(final int  position){
+        AlertDialog.Builder alterDialog  = new AlertDialog.Builder(getContext());
+        alterDialog.setTitle("Thông báo ");
+        alterDialog.setIcon(R.mipmap.ic_launcher);
+        alterDialog.setMessage("Bạn có muốn xóa mặt hàng này không ?");
+        alterDialog.setPositiveButton("Có", new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                arrayItem.remove(position);
+                adapter.notifyDataSetChanged();
+            }
+        });
+        alterDialog.setNegativeButton("Không", new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        alterDialog.show();
+    }
 
     public void initDATA(){
         arrayItem.add(new Item(R.drawable.img_natuto,"Uzumaki Naruto","Nhân vật chính trong bộ anime NARUTO. Câu chuyện xoay quanh Uzumaki Naruto, một ninja trẻ muốn tìm cách khẳng định mình để được mọi người công nhận và nuôi ước mơ trở thành Hokage - người lãnh đạo Làng Lá. Một câu bé vui vẻ , lạc quan và thích ăn ramen"));

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.utils.widget.ImageFilterView;
@@ -21,6 +22,7 @@ public class ItemRecycleAdapter extends RecyclerView.Adapter<ItemRecycleAdapter.
 
     public interface IClickItemListener{
         void onClickItem(Item item);
+        void onLongCLickItem(int position);
     }
 
     public ItemRecycleAdapter(ArrayList<Item> dataitems, Context context,IClickItemListener listener) {
@@ -54,6 +56,13 @@ public class ItemRecycleAdapter extends RecyclerView.Adapter<ItemRecycleAdapter.
             @Override
             public void onClick(View view) {
                 clickItemListener.onClickItem(item);
+            }
+        });
+        holder.itemclick.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                clickItemListener.onLongCLickItem(position);
+                return true;
             }
         });
     }
