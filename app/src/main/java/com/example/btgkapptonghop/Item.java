@@ -2,7 +2,9 @@ package com.example.btgkapptonghop;
 
 import android.net.Uri;
 
-public class Item {
+import java.io.Serializable;
+
+public class Item implements Serializable {
 
 
     private Uri linkimg;

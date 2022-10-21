@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -18,8 +21,12 @@ public class DetailFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 
-    // TODO: Rename and change types of parameters
+    public static final String TAG = DetailFragment.class.getName();
 
+    // TODO: Rename and change types of parameters
+    TextView detailname,detaildes;
+    ImageView imgcharactor;
+    ImageView buttonback;
     public DetailFragment() {
         // Required empty public constructor
     }
@@ -51,6 +58,35 @@ public class DetailFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_detail, container, false);
+        View view = inflater.inflate(R.layout.fragment_detail, container, false);
+        detailname = view.findViewById(R.id.detailname);
+        detaildes = view.findViewById(R.id.detaildes);
+        imgcharactor = view.findViewById(R.id.imgcharactor);
+        buttonback= view.findViewById(R.id.buttonback);
+
+        Bundle bundle = getArguments();
+        if (bundle != null){
+            Item item = (Item) bundle.getSerializable("character");
+            if (item != null){
+                detailname.setText(item.getHoTen());
+                detaildes.setText(item.getGioiThieu());
+                if (item.getLogo() == 0)
+                {
+                    imgcharactor.setImageURI(item.getLinkimg());
+                }
+                else {
+                    imgcharactor.setImageResource(item.getLogo());
+                }
+            }
+        }
+
+        buttonback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().getSupportFragmentManager().popBackStack();
+            }
+        });
+
+        return view;
     }
 }

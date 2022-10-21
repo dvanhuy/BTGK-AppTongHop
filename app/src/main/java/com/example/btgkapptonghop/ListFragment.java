@@ -92,14 +92,14 @@ public class ListFragment extends Fragment {
         dividerItemDecoration.setDrawable(
                 ContextCompat.getDrawable(getContext(), R.drawable.list_divider)
         );
-
+        HomePage homePage = (HomePage) getActivity();
         recyclerView.addItemDecoration(dividerItemDecoration);
-
 //        arrayItem = new ArrayList<>(); // làm cho danh sách tạo lại
+
         adapter = new ItemRecycleAdapter(arrayItem, getContext(), new ItemRecycleAdapter.IClickItemListener() {
             @Override
             public void onClickItem(Item item) {
-
+                homePage.goToDetailFragment(item);
             }
         });
         recyclerView.setAdapter(adapter);

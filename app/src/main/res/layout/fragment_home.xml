@@ -133,7 +133,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/patrickhand_sc"
-                android:text="nội dung :"
+                android:text="xem thêm :"
                 android:textColor="#000000"
                 android:textSize="30sp"
                 android:textStyle="bold"
@@ -163,14 +163,18 @@
 
                     <TextView
                         android:id="@+id/textView41"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
                         android:fontFamily="@font/patrick_hand"
-                        android:text="Trang chủ"
+                        android:text="Top những anime hay nhất mọi thời đại"
+                        android:maxLines="1"
+                        android:ellipsize="end"
                         android:textColor="#FFFFFF"
                         android:textSize="24sp"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -183,14 +187,18 @@
 
                     <TextView
                         android:id="@+id/textView42"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
                         android:fontFamily="@font/patrick_hand"
-                        android:text="Danh sách nhân vật"
+                        android:text="Top 20 bộ phim hay nhất mùa hè 2022"
+                        android:maxLines="1"
+                        android:ellipsize="end"
                         android:textColor="#FFFFFF"
                         android:textSize="24sp"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -203,14 +211,18 @@
 
                     <TextView
                         android:id="@+id/textView43"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
                         android:fontFamily="@font/patrick_hand"
-                        android:text="Thông báo"
+                        android:text="Top 10 anime hay nhất trong năm 2021"
+                        android:maxLines="1"
+                        android:ellipsize="end"
                         android:textColor="#FFFFFF"
                         android:textSize="24sp"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -223,14 +235,18 @@
 
                     <TextView
                         android:id="@+id/textView44"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
                         android:fontFamily="@font/patrick_hand"
-                        android:text="Thông tin cá nhân"
+                        android:text="Top những anime có cốt truyện khó hiểu nhất"
+                        android:maxLines="1"
+                        android:ellipsize="end"
                         android:textColor="#FFFFFF"
                         android:textSize="24sp"
                         app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>

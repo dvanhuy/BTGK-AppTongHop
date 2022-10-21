@@ -8,6 +8,8 @@
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable-v24/list_bg_edittext.xml" value="0.1675" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable-v24/list_bgdialog.xml" value="0.1675" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable-v24/profile_ic_logout.xml" value="0.1675" />
+        <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable-v24/signin_ic_wave.xml" value="0.19" />
+        <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable-v24/signup_ic_back.xml" value="0.19" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable/detail_bg_back.xml" value="0.19" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable/detail_bg_btsubmit.xml" value="0.19" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable/detail_bg_head.xml" value="0.1675" />
@@ -27,6 +29,7 @@
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable/navigation_ic_home.xml" value="0.1675" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable/navigation_ic_notification.xml" value="0.19" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable/navigation_ic_profile.xml" value="0.19" />
+        <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable/notification_borderbottom.xml" value="0.19" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable/profile_bg_des.xml" value="0.1675" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable/profile_bg_gradient_header.xml" value="0.1675" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable/profile_bg_info.xml" value="0.1675" />
@@ -36,8 +39,11 @@
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable/profile_ic_mail.xml" value="0.1675" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable/profile_ic_phonelink.xml" value="0.1675" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable/profile_ic_web.xml" value="0.1675" />
+        <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/drawable/signup_ic_wave.xml" value="0.19" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/layout/activity_home.xml" value="0.2359375" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/layout/activity_homepage.xml" value="0.25" />
+        <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
+        <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/layout/dialog_additem.xml" value="0.25" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/layout/fragment_detail.xml" value="0.25" />
         <entry key="..\:/AndroidJava/BTGKAppTongHop/app/src/main/res/layout/fragment_home.xml" value="0.25" />

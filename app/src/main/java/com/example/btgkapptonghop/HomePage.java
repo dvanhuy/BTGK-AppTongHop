@@ -3,6 +3,7 @@ package com.example.btgkapptonghop;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -56,5 +57,14 @@ public class HomePage extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+    public void goToDetailFragment(Item item){
+        DetailFragment detailFragment = new DetailFragment();
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("character",item);
+        detailFragment.setArguments(bundle);
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,detailFragment).addToBackStack(DetailFragment.TAG).commit();
+
     }
 }
